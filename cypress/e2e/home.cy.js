@@ -11,7 +11,7 @@ describe('Homepage', () => {
 
         cy.findByRole('textbox', { name: /Cherchez un ingrédient/ })
             .type('foo')
-        cy.get('button.fr-btn.fr-btn--md.inline-flex.justify-center.max-h-10.mt-2 rounded-r')
+        cy.get('button.fr-btn.fr-btn--md.inline-flex.justify-center.max-h-10.mt-2.rounded-r')
             .click();
         cy.findByRole('heading', { level: 1 })
             .should('text.contains', 'Nous n\'avons pas trouvé de résultats pour « foo »')
